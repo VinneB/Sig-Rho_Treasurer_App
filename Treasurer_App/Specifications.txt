@@ -1,0 +1,11 @@
+﻿We seek to build a application for use by our SigRho Treasurer. To begin we will enumerate all objects which may potentially be used
+Objects: Budget, master_balance, transactions (withdrawals, deposits)
+	- Budget
+		+ properties: budget_amount, account_balance, ledger_balance, budget_name, active_officer, parent_budget (if null, budget is master)
+		+ methods: (getters/setters)
+	- transaction
+		+ propertes: amount, name, description, associated_budget, is_settled
+		+ methods: (getters, setters)
+
+Functionality: make transactions which are initially simply marked in the leger_balance but are then are marked in account_balance if settled,
+view all transactions (for any budget), mark as settled, display all unsettled transactions
